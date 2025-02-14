@@ -8,16 +8,16 @@ import math
 # # i. Nota: masa = diámetro * longitud / densidad; densidad = 3.5
 # # Gr/cm
 
-# longitud = float(input("Ingrese la longitud de la varilla: "))
-# diametro = float(input("Ingrese el diametro de la varilla: "))
-# densidad = 3.5
-# masa = diametro * longitud / densidad
+longitud = float(input("Ingrese la longitud de la varilla: "))
+diametro = float(input("Ingrese el diametro de la varilla: "))
+densidad = 3.5
+masa = diametro * longitud / densidad
 
 
-# if(longitud > 7.5 and longitud < 9 and diametro > 0.5 and diametro < 1.3 and masa < 5.8):
-#     print("Pieza Aceptada")
-# else: 
-#     print("Pieza Rechazada")
+if(longitud > 7.5 and longitud < 9 and diametro > 0.5 and diametro < 1.3 and masa < 5.8):
+    print("Pieza Aceptada")
+else: 
+    print("Pieza Rechazada")
 
 # # 12.Un vendedor desea calcular su comisión total sobre las ventas de varios
 # # artículos. Al vendedor le corresponde el 3% de comisión sobre artículos
@@ -26,52 +26,52 @@ import math
 # # saber también cuántas ventas hizo menores de 2000 y cuantas mayores o
 # # iguales a 2000.
 
-# comisionTotal = 0
-# mayores = 0
-# menores = 0
+comisionTotal = 0
+mayores = 0
+menores = 0
 
-# for i in range(5):
-#     precio = float(input(f"Ingrese el valor de la venta {i+1}: "))
+for i in range(5):
+    precio = float(input(f"Ingrese el valor de la venta {i+1}: "))
 
-#     if precio < 2000:
-#         comision = precio*0.03
-#         menores += 1
-#     else: 
-#         comision = precio*0.05
-#         mayores += 1
-#     comisionTotal += comision
+    if precio < 2000:
+        comision = precio*0.03
+        menores += 1
+    else: 
+        comision = precio*0.05
+        mayores += 1
+    comisionTotal += comision
 
-# print(f"Ventas menores (2000): {menores}")
-# print(f"Ventas Mayores o iguales (2000): {mayores}")
-# print(f"La comision de todas las ventas es de: {comisionTotal}")
+print(f"Ventas menores (2000): {menores}")
+print(f"Ventas Mayores o iguales (2000): {mayores}")
+print(f"La comision de todas las ventas es de: {comisionTotal}")
 
 # # 13.desarrollar un algoritmo que halle la nota total de una materia en el SENA, y
 # # determine si la gano o la reprobó
 
-# notas = 3
-# suma = 0
+notas = 3
+suma = 0
 
-# for i in range (notas):
-#     nota = float(input(f"Ingrese la nota {i+1}: "))
+for i in range (notas):
+    nota = float(input(f"Ingrese la nota {i+1}: "))
 
-#     if(nota > 5):
-#         print("Solo digite notas de 1 a 5")
-#     else:
-#         suma += nota
-#         promedio = suma/notas
+    if(nota > 5):
+        print("Solo digite notas de 1 a 5")
+    else:
+        suma += nota
+        promedio = suma/notas
 
-# if(promedio >= 3):
-#     print("Aprobado")
-#     print(f"Nota total: {promedio}")
-# else:
-#     print("Reprobado")
-#     print(f"Nota total: {promedio}")
+if(promedio >= 3):
+    print("Aprobado")
+    print(f"Nota total: {promedio}")
+else:
+    print("Reprobado")
+    print(f"Nota total: {promedio}")
 
-# # 14. Desarrollar un algoritmo que evalué la siguiente expresión aritmética 1/n.
+# 14. Desarrollar un algoritmo que evalué la siguiente expresión aritmética 1/n.
 
-# n = int(input("Ingrese un numero para calcular: "))
-# expresion = 1 / n
-# print(f"El resultado es: {expresion}")
+n = int(input("Ingrese un numero para calcular: "))
+expresion = 1 / n
+print(f"El resultado es: {expresion}")
 
 # 15. desarrollar el algoritmo que evalué la formula cuadrática o general.
 
